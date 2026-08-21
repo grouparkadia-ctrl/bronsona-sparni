@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="lv">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QQRZRJRNY"></script>
+  <!-- Google Consent Mode v2: analytics loads only after visitor approval. -->
   <script>
+    window.GOOGLE_TAG_ID = 'G-8QQRZRJRNY';
+    window.COOKIE_CONSENT_STORAGE_KEY = 'bronsona_sparni_cookie_consent_v1';
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-8QQRZRJRNY');
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +20,7 @@
   <title>Bronsona Spārni — Prasme. Darbs. Jauns sākums.</title>
   <meta name="description" content="Bronsona Spārni — praktiska reintegrācijas iniciatīva, kas savieno profesionālas prasmes, darba gatavību un atbalstu pēc ieslodzījuma.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cookie-consent.css?v=20260821-consent">
 </head>
 <body>
   <header class="site-header">
@@ -188,6 +193,7 @@
     <p>BRONSONA SPĀRNI BIEDRĪBA · Reģ. Nr. 40008362730 · Tērbatas iela 8B–54, Rīga, LV-1050</p>
   </footer>
 
+  <script src="cookie-consent.js?v=20260821-consent"></script>
   <script src="script.js"></script>
 </body>
 </html>
